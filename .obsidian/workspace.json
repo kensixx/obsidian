@@ -1,0 +1,154 @@
+{
+  "main": {
+    "id": "5853021de8438100",
+    "type": "split",
+    "children": [
+      {
+        "id": "24164f68da1189ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d38bc88f0681bf10",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MS PayDirect.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7d073eefc1498812",
+    "type": "split",
+    "children": [
+      {
+        "id": "c54eec2813445df9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8844a39d2d1a82c0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "abde3e22729df56f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cf080b25785d7c30",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2174861f50a86b15",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d9d21c30d480238",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "36d766bcf38825cd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "MS PayDirect.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "907fd45db0c24573",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "MS PayDirect.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f9689f6e279e3b84",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6545ea99e9569cea",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "MS PayDirect.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d38bc88f0681bf10",
+  "lastOpenFiles": [
+    "Pasted image 20240514135557.png",
+    "MS PayDirect.md"
+  ]
+}
