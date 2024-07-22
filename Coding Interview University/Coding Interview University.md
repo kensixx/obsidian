@@ -4,7 +4,7 @@ Resource: https://github.com/jwasham/coding-interview-university?tab=readme-ov-f
 test test test
 
 ### Example
-test test test
+test test test mobile
 
 ## Open-Closed Principle
 asasas
