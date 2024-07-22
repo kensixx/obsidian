@@ -11,13 +11,28 @@
             "id": "d38bc88f0681bf10",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20240514135557.png"
+                "file": "Coding Interview University/Coding Interview University.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7150de10c40f8ae0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20240514135557.png",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20240514135557.png",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20240514135557.png"
+                "file": "README.md"
               }
             }
           },
@@ -140,7 +155,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 345.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -152,12 +167,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d38bc88f0681bf10",
+  "active": "7150de10c40f8ae0",
   "lastOpenFiles": [
-    "MS PayDirect.md",
     "Pasted image 20240514135557.png",
     "Coding Interview University/Coding Interview University.md",
-    "Coding Interview University",
-    "README.md"
+    "README.md",
+    "MS PayDirect.md",
+    "Coding Interview University"
   ]
 }
