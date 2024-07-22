@@ -35,11 +35,10 @@
             "id": "8c7a9e48c68c51a2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
+                "file": ".obsidian/plugins/obsidian-git/data.json",
+                "staged": false
               }
             }
           }
@@ -110,7 +109,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +125,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,9 +146,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Untitled.md"
-              }
+              "state": {}
             }
           },
           {
@@ -182,12 +177,12 @@
   },
   "active": "8c7a9e48c68c51a2",
   "lastOpenFiles": [
-    "README.md",
+    "Coding Interview University/Coding Interview University.md",
     "Untitled.md",
+    "README.md",
     "Untitled Kanban.md",
     "Sample.md",
     "Sample @{2024-07-24}.md",
-    "Coding Interview University/Coding Interview University.md",
     "Pasted image 20240514135557.png",
     "MS PayDirect.md",
     "Coding Interview University"
