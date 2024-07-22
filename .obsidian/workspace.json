@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MS PayDirect.md",
+                "file": "Coding Interview University/Coding Interview University.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MS PayDirect.md",
+                "file": "Coding Interview University/Coding Interview University.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MS PayDirect.md",
+                "file": "Coding Interview University/Coding Interview University.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MS PayDirect.md"
+                "file": "Coding Interview University/Coding Interview University.md"
               }
             }
           }
@@ -148,7 +148,10 @@
   },
   "active": "d38bc88f0681bf10",
   "lastOpenFiles": [
+    "MS PayDirect.md",
+    "Coding Interview University/Coding Interview University.md",
+    "Coding Interview University",
     "Pasted image 20240514135557.png",
-    "MS PayDirect.md"
+    "README.md"
   ]
 }
