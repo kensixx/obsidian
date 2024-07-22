@@ -11,11 +11,9 @@
             "id": "d38bc88f0681bf10",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Coding Interview University/Coding Interview University.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20240514135557.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding Interview University/Coding Interview University.md",
+                "file": "Pasted image 20240514135557.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Coding Interview University/Coding Interview University.md",
+                "file": "Pasted image 20240514135557.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +123,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Coding Interview University/Coding Interview University.md"
+                "file": "Pasted image 20240514135557.png"
               }
             }
+          },
+          {
+            "id": "ad2a6c080a6d16e6",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,9 +155,9 @@
   "active": "d38bc88f0681bf10",
   "lastOpenFiles": [
     "MS PayDirect.md",
+    "Pasted image 20240514135557.png",
     "Coding Interview University/Coding Interview University.md",
     "Coding Interview University",
-    "Pasted image 20240514135557.png",
     "README.md"
   ]
 }
