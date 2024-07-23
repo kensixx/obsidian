@@ -97,6 +97,19 @@ This is good example because:
 - You just have to add a new class that `extends` to `Shape` 
 - The `GraphicEditor` -> `drawShape()` method doesn't need to update every time there is a new `Shape`.
 - So the one that has to adjust is the new class only, it has to implement the `draw()` method. 
+
+## Liskov's Substitution Principle(LSP)
+Description: Derived types must be completely substitutable for their base types.
+
+### Example
+
+## Interface Segregation Principle (ISP)
+The **Interface Segregation Principle** states that clients should not be forced to implement interfaces they don't use.
+
+Instead of one fat interface, many small interfaces are preferred based on groups of methods, each one serving one submodule.
+### Example
+![](attachments/Pasted%20image%2020240723192708.png)
+
 ### PlantUML Example
 ```plantuml
 Bob -> Alice : hello
