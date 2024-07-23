@@ -20,7 +20,25 @@ Applying SRP, these functions should be separated into different classes:
 
 ## Open-Closed Principle
 Software entities like classes, modules and functions should be **open for extension** but **closed for modifications**.
+
+The **Open Close Principle** states that the design and writing of the code should be done in a way that new functionality should be added with minimum changes in the existing code. 
+
+The design should be done in a way to allow the adding of new functionality as new classes, keeping as much as possible existing code unchanged.
 ### Example
+![[Pasted image 20240723115524.png]]
+
+Suppose you have a **ShapeDrawer** or **GraphicEditor** that draws shapes.
+
+The bad example is: on your ShapeDrawer main code, you check the type of shape and execute the method based on the Shape.
+
+
+
+
+
+
+
+
+### PlantUML Example
 ```plantuml
 Bob -> Alice : hello
 Alice -> Wonderland: hello
