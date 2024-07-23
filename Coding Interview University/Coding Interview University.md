@@ -10,6 +10,7 @@ Resources:
 ### Example
 User Management in a Web Applications
 ![](attachments/Pasted%20image%2020240723102119.png)
+
 Applying SRP, these functions should be separated into different classes:
 
 - A **User** class solely for storing and managing user details.
@@ -28,6 +29,7 @@ The design should be done in a way to allow the adding of new functionality as n
 Suppose you have a **ShapeDrawer** or **GraphicEditor** that draws shapes.
 
 The following is a bad example:
+
 ![](attachments/Pasted%20image%2020240723185910.png)
 
 ```java
