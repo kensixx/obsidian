@@ -35,10 +35,11 @@
             "id": "8c7a9e48c68c51a2",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": ".obsidian/plugins/obsidian-git/data.json",
-                "staged": false
+                "file": "Coding Interview University/Coding Interview University.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -109,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Coding Interview University/Coding Interview University.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Coding Interview University/Coding Interview University.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +149,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Coding Interview University/Coding Interview University.md"
+              }
             }
           },
           {
@@ -158,7 +163,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -177,13 +182,15 @@
   },
   "active": "8c7a9e48c68c51a2",
   "lastOpenFiles": [
+    "Coding Interview University/Pasted image 20240723102119.png",
+    "Pasted image 20240514135557.png",
+    "Pasted image 20240723102052.png",
     "Coding Interview University/Coding Interview University.md",
     "Untitled.md",
     "README.md",
     "Untitled Kanban.md",
     "Sample.md",
     "Sample @{2024-07-24}.md",
-    "Pasted image 20240514135557.png",
     "MS PayDirect.md",
     "Coding Interview University"
   ]
