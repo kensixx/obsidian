@@ -5,6 +5,11 @@ Resources:
 | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
 | https://www.oodesign.com/                                                                                    | OODesign.com                                 |
 | https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#additional-detail-on-some-subjects | Coding Interview University -> SOLID Section |
+1. SOLID 
+2. Best practices pag create restful api
+3. Interface vs Abstract
+4. concurrency
+5. Stream
 ## Single Responsibility Principle
 **There should never be more than one reason for a class to change.**
 ### Example
