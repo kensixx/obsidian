@@ -7,10 +7,11 @@ Resources:
 | https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#additional-detail-on-some-subjects | Coding Interview University -> SOLID Section |
 1. SOLID 
 2. Design Patterns, 1 example for each category 
-3. Best practices pag create restful api
-4. Interface vs Abstract
-5. concurrency
-6. Stream
+3. Pillars
+4. Best practices pag create restful api
+5. Interface vs Abstract
+6. concurrency
+7. Stream
 # Single Responsibility Principle
 **There should never be more than one reason for a class to change.**
 ## Example
@@ -285,3 +286,141 @@ Ensure that only one instance of a class is created and Provide a global acces
 ## Behavioral Patterns
 
 # RESTful API - Best Practices
+
+## Use noun instead of verbs
+
+For example:
+```
+// Don't do this
+- GET /get_customers
+- POST /insert_customers
+- PUT /modify_customers
+- DELETE /delete_customers
+
+// Do this
++ GET /customers
++ POST /customers
++ PUT /customers
++ DELETE /customers
+```
+
+## Endpoints name should be plural
+
+For example:
+
+```
+// Don't do this
+- GET /article
+- GET /article/:id
+
+// Do this
++ GET /articles
++ GET /articles/:id
+```
+
+## Support for Filter, Sort, and Pagination
+
+For example:
+- **Filter:** filter the customer with the following properties… the last name is Smith and the age is 30.  
+    `GET /customers?last_name=Smith&age=30`
+- **Pagination:** Return 20 rows starting from 0  
+    `GET /customers?limit=20&offset=0`
+- **Sort:** Return rows sorted by email in the ascendant.  
+    `GET /customers?sort_by=asc(email)`
+
+## Versioning
+Keeping the different versions of your API will help you to track the changes and it will help you to restore the previous version in case if something goes wrong with the latest one.
+
+For example:
+```
+GET /v1/customers
+GET /v2/students
+```
+# Interface vs Abstract
+
+## Interface
+- they are "contracts"
+- they will be overridden interface implementing classes, aka "impl classes"
+- in **Java 8**, there is now an ability to **support static and default methods** in interfaces.
+- Interfaces in **Java 9+** can have _private_ methods, which can be used to split lengthy default methods.
+
+### When to Use an Interface
+- Consider using the interface when our problem makes the statement **“A is capable of [doing this]”**
+	- For example, “Clonable is capable of cloning an object”, “Drawable is capable of drawing a shape”, etc.
+- When application functionalities have to be defined **as a contract**, 
+	- but not concerned about who implements the behavior. i.e., third-party vendors need to implement it fully
+
+### Example
+```java
+public interface Sender { 
+	void send(File fileToBeSent); 
+}
+```
+
+```java
+public class ImageSender implements Sender {
+    @Override
+    public void send(File fileToBeSent) {
+        // image sending implementation code.
+    }
+}
+```
+
+- Here, _Sender_ is an interface with a method _send()_. 
+- Hence, **“Sender is capable of sending a file”** we implemented it as an interface. 
+- _ImageSender_ implements the interface for sending an image to the target. 
+- We can further use the above interface to implement _VideoSender_, _DocumentSender_ to accomplish various jobs.
+## Abstract
+
+### When to Use an Abstract
+- **Consider using abstract classes and inheritance when our problem makes the evidence “A is a B”.** 
+	- For example, “Dog is an Animal”, “Lamborghini is a Car”, etc.
+- Trying to use the inheritance concept in code (**share code among many related classes**), by providing **common base class** methods that the subclasses override
+
+### Example
+```java
+public abstract class Vehicle {
+    protected abstract void start();
+    protected abstract void stop();
+    protected abstract void drive();
+    protected abstract void changeGear();
+    protected abstract void reverse();
+    
+    // standard getters and setters
+}
+```
+
+```java
+public class Car extends Vehicle {
+
+    @Override
+    protected void start() {
+        // code implementation details on starting a car.
+    }
+
+    @Override
+    protected void stop() {
+        // code implementation details on stopping a car.
+    }
+
+    @Override
+    protected void drive() {
+        // code implementation details on start driving a car.
+    }
+
+    @Override
+    protected void changeGear() {
+        // code implementation details on changing the car gear.
+    }
+
+    @Override
+    protected void reverse() {
+        // code implementation details on reverse driving a car.
+    }
+}
+```
+
+- In the above code, the _Vehicle_ class has been defined as abstract along with other abstract methods. 
+- It provides generic operations of any real-world vehicle and also has several common functionalities. 
+- The _Car_ class, which extends the _Vehicle_ class, overrides all the methods by providing the car’s implementation details (“Car is a Vehicle”).
+
