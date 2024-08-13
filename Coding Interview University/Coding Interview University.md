@@ -528,11 +528,13 @@ Java Streams or Streams is a major new functionality in Java 8 – [_java.util.
 
 The `java.util.stream` package consists of classes, interfaces, and many types **to allow for functional-style operations over elements.**
 
+> **This is very synonymous or a Java-equivalent to the lambda expressions in JavaScript.**
+
 Key Definitions:
 - From a developer point of view, it is a new concept that might just look like a Collection, but it is in fact much different from a Collection.
 - A Stream **does not** hold any data. This is very important to keep that in mind and understand.
 	- There is no data in a _Stream_, however, there is data held in a _Collection_.
-- A Stream shouldn't Modify the Source
+- A Stream shouldn't Modify the Source.
 
 ## Stream Creation
 A _stream()_ default method is added to the _Collection_ interface and allows creating a `Stream<T>` using any collection as an element source:
@@ -685,3 +687,24 @@ List<String> resultList
 ```
 
 This code uses the terminal _collect()_ operation to reduce a `Stream<String>` to the `List<String>`.
+
+
+# Java Concurrent / Concurrency
+Resource: https://www.baeldung.com/java-util-concurrent
+
+The _java.util.concurrent_ package provides tools for creating concurrent applications.
+## Main Components [](https://www.baeldung.com/java-util-concurrent#main-components)
+
+These are some of the most useful utilities from the _java.util.concurrent_ package:
+- _Executor_
+- _ExecutorService_
+- _ScheduledExecutorService_
+- _Future_
+- _CountDownLatch_
+- _CyclicBarrier_
+- _Semaphore_
+- _ThreadFactory_
+- _BlockingQueue_
+- _DelayQueue_
+- _Locks_
+- _Phaser_
