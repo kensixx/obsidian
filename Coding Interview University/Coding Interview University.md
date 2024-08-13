@@ -7,11 +7,15 @@ Resources:
 | https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#additional-detail-on-some-subjects | Coding Interview University -> SOLID Section |
 1. SOLID 
 2. Design Patterns, 1 example for each category 
-3. Pillars
-4. Best practices pag create restful api
-5. Interface vs Abstract
-6. concurrency
-7. Stream
+3. OOP Pillars
+	- Abstraction
+	- Encapsulation
+	- Inheritance
+	- Polymorphism
+1. Best practices pag create restful api
+2. Interface vs Abstract
+3. concurrency
+4. Stream
 # Single Responsibility Principle
 **There should never be more than one reason for a class to change.**
 ## Example
@@ -424,3 +428,11 @@ public class Car extends Vehicle {
 - It provides generic operations of any real-world vehicle and also has several common functionalities. 
 - The _Car_ class, which extends the _Vehicle_ class, overrides all the methods by providing the car’s implementation details (“Car is a Vehicle”).
 
+# OOP Pillars
+# Abstraction
+
+# Encapsulation
+
+# Inheritance
+
+# Polymorphism
