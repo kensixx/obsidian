@@ -167,7 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 345.5
+    "width": 245.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,7 +180,7 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "7150de10c40f8ae0",
+  "active": "6545ea99e9569cea",
   "lastOpenFiles": [
     "Coding Interview University/attachments/Pasted image 20240725210806.png",
     "README.md",

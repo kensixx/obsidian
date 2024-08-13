@@ -562,3 +562,126 @@ long count = list.stream().distinct().count();
 So, the _distinct()_ method represents an intermediate operation, which creates a new stream of unique elements of the previous stream. 
 
 And the _count()_ method is a terminal operation, which returns stream’s size.
+
+### Iterating[](https://www.baeldung.com/java-8-streams-introduction#1-iterating)
+
+Stream API helps to substitute _for_, _for-each_, and _while_ loops. It allows concentrating on operation’s logic, but not on the iteration over the sequence of elements. For example:
+
+```java
+for (String string : list) {
+    if (string.contains("a")) {
+        return true;
+    }
+}
+```
+
+This code can be changed just with one line of Java 8 code:
+
+```java
+boolean isExist = list.stream().anyMatch(element -> element.contains("a"));
+```
+
+### Filtering[](https://www.baeldung.com/java-8-streams-introduction#2-filtering)
+
+The _filter()_ method allows us to pick a stream of elements that satisfy a predicate.
+
+For example, consider the following list:
+
+```java
+ArrayList<String> list = new ArrayList<>();
+list.add("One");
+list.add("OneAndOnly");
+list.add("Derek");
+list.add("Change");
+list.add("factory");
+list.add("justBefore");
+list.add("Italy");
+list.add("Italy");
+list.add("Thursday");
+list.add("");
+list.add("");
+```
+
+The following code: 
+- creates a `Stream<String>` of the `List<String>`
+- finds all elements of this stream which contain _char “d”_, 
+- and creates a new stream containing only the filtered elements:
+
+```java
+Stream<String> stream = list.stream().filter(element -> element.contains("d"));
+```
+### Mapping[](https://www.baeldung.com/java-8-streams-introduction#3-mapping)
+
+To convert elements of a _Stream_ by applying a special function to them and to collect these new elements into a _Stream_, we can use the _map()_ method:
+
+```java
+List<String> uris = new ArrayList<>();
+uris.add("C:\\My.txt");
+Stream<Path> stream = uris.stream().map(uri -> Paths.get(uri));
+```
+
+So, the code above converts `Stream<String>` to the `Stream<Path>` by applying a specific lambda expression to every element of the initial _Stream_.
+
+If you have a stream where every element contains its own sequence of elements and you want to create a stream of these inner elements, you should use the _flatMap()_ method:
+
+For example:
+
+```java
+List<Detail> details = new ArrayList<>();
+details.add(new Detail());
+Stream<String> stream
+  = details.stream().flatMap(detail -> detail.getParts().stream());
+```
+
+
+### Matching[](https://www.baeldung.com/java-8-streams-introduction#4-matching)
+
+Stream API gives a handy set of instruments to validate elements of a sequence according to some predicate. 
+
+To do this, one of the following methods can be used: _anyMatch(), allMatch(), noneMatch()._ Their names are self-explanatory. Those are terminal operations that return a _boolean_:
+
+```java
+boolean isValid = list.stream().anyMatch(element -> element.contains("h")); // true
+boolean isValidOne = list.stream().allMatch(element -> element.contains("h")); // false
+boolean isValidTwo = list.stream().noneMatch(element -> element.contains("h")); // false
+```
+
+For empty streams, the _allMatch()_ method with any given predicate will return _true_:
+
+```java
+Stream.empty().allMatch(Objects::nonNull); // true
+```
+
+This is a sensible default, as we can’t find any element that doesn’t satisfy the predicate.
+
+Similarly, the _anyMatch()_ method always returns _false_ for empty streams:
+
+```java
+Stream.empty().anyMatch(Objects::nonNull); // false
+```
+
+
+### Reduction[](https://www.baeldung.com/java-8-streams-introduction#5-reduction)
+
+Stream API allows reducing a sequence of elements to some value according to a specified function with the help of the _reduce()_ method of the type _Stream_. This method takes two parameters: first – start value, second – an accumulator function.
+
+Imagine that you have a `List<Integer>` and you want to have a sum of all these elements and some initial _Integer_ (in this example 23). So, you can run the following code and result will be 26 (23 + 1 + 1 + 1).
+
+```java
+List<Integer> integers = Arrays.asList(1, 1, 1);
+Integer reduced = integers.stream().reduce(23, (a, b) -> a + b);
+```
+
+
+### Collecting[](https://www.baeldung.com/java-8-streams-introduction#6-collecting)
+
+The reduction can also be provided by the _collect()_ method of type _Stream._ This operation is very handy in case of converting a stream to a _Collection_ or a _Map_ and representing a stream in the form of a single string. 
+
+There is a utility class _Collectors_ which provide a solution for almost all typical collecting operations. For some, not trivial tasks, a custom _Collector_ can be created.
+
+```java
+List<String> resultList 
+  = list.stream().map(element -> element.toUpperCase()).collect(Collectors.toList());
+```
+
+This code uses the terminal _collect()_ operation to reduce a `Stream<String>` to the `List<String>`.
