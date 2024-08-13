@@ -344,7 +344,7 @@ GET /v2/students
 
 ## Interface
 - they are "contracts"
-- they will be overridden interface implementing classes, aka "impl classes"
+- they will be used by interface implementing classes, aka "impl classes"
 - in **Java 8**, there is now an ability to **support static and default methods** in interfaces.
 - Interfaces in **Java 9+** can have _private_ methods, which can be used to split lengthy default methods.
 
@@ -429,13 +429,13 @@ public class Car extends Vehicle {
 - The _Car_ class, which extends the _Vehicle_ class, overrides all the methods by providing the car’s implementation details (“Car is a Vehicle”).
 
 # OOP Pillars
-# Abstraction
+## Abstraction
 Abstraction is hiding complexities of implementation and exposing simpler interfaces.
 
 In OOP, abstraction means hiding the complex implementation details of a program, exposing only the API required to use the implementation. 
 
-In Java, we achieve abstraction by using interfaces and abstract classes.
-# Encapsulation
+> In Java, we achieve abstraction by using **interfaces and abstract classes**.
+## Encapsulation
 **Encapsulation is hiding the state or internal representation of an object from the consumer of an API** and providing publicly accessible methods bound to the object for read-write access. 
 
 For example, in Java, is making all data fields _private_ and only accessible by using the _public_ member methods:
@@ -454,7 +454,7 @@ public class Car {
 }
 ```
 Here, the field _speed_ is encapsulated using the _private_ access modifier, and can only be accessed using the _public getSpeed()_ and _setSpeed()_ methods.
-# Inheritance
+## Inheritance
 **Inheritance is the mechanism that allows one class to acquire all the properties from another class by inheriting the class.**
 
 In Java, we do this by extending the parent class. Thus, the child class gets all the properties from the parent:
@@ -468,7 +468,7 @@ public class Car extends Vehicle {
 When we extend a class, we form an [IS-A relationship](https://www.baeldung.com/java-inheritance-composition). **The _Car_ IS-A _Vehicle_.** So, it has all the characteristics of a _Vehicle_.
 
 While we inherit from the parent class, a developer could also override a method implementation from the parent. **This is known as [method overriding](https://www.baeldung.com/java-method-overload-override#method-overriding).**
-# Polymorphism
+## Polymorphism
 [Polymorphism](https://www.baeldung.com/cs/polymorphism) is the ability of an OOP language to process data differently depending on their types of inputs. 
 
 In Java, this can be the same method name having **different parameters** and performing different functions,
