@@ -522,3 +522,43 @@ public class ImageFile extends GenericFile {
     }
 }
 ```
+
+# Java 8 Streams
+Java Streams or Streams is a major new functionality in Java 8 – [_java.util.stream_](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html).
+
+The `java.util.stream` package consists of classes, interfaces, and many types **to allow for functional-style operations over elements.**
+
+Key Definitions:
+- From a developer point of view, it is a new concept that might just look like a Collection, but it is in fact much different from a Collection.
+- A Stream **does not** hold any data. This is very important to keep that in mind and understand.
+	- There is no data in a _Stream_, however, there is data held in a _Collection_.
+- A Stream shouldn't Modify the Source
+
+## Stream Creation
+A _stream()_ default method is added to the _Collection_ interface and allows creating a `Stream<T>` using any collection as an element source:
+
+```java
+Stream<String> stream = list.stream();
+```
+
+### Multi-threading With Streams
+Stream API also simplifies multithreading by providing the _parallelStream()_ method that runs operations over the stream’s elements in parallel mode.
+
+The code below allows us to run method _doWork()_ in parallel for every element of the stream:
+
+```java
+list.parallelStream().forEach(element -> doWork(element));
+```
+
+## Stream Operations
+> It’s also worth noting that operations on streams don’t change the source.
+
+Here’s a quick example:
+
+```java
+long count = list.stream().distinct().count();
+```
+
+So, the _distinct()_ method represents an intermediate operation, which creates a new stream of unique elements of the previous stream. 
+
+And the _count()_ method is a terminal operation, which returns stream’s size.
