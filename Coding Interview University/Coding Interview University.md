@@ -430,9 +430,95 @@ public class Car extends Vehicle {
 
 # OOP Pillars
 # Abstraction
+Abstraction is hiding complexities of implementation and exposing simpler interfaces.
 
+In OOP, abstraction means hiding the complex implementation details of a program, exposing only the API required to use the implementation. 
+
+In Java, we achieve abstraction by using interfaces and abstract classes.
 # Encapsulation
+**Encapsulation is hiding the state or internal representation of an object from the consumer of an API** and providing publicly accessible methods bound to the object for read-write access. 
 
+For example, in Java, is making all data fields _private_ and only accessible by using the _public_ member methods:
+
+```java
+public class Car {
+    private int speed;
+
+    public int getSpeed() {
+        return color;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+}
+```
+Here, the field _speed_ is encapsulated using the _private_ access modifier, and can only be accessed using the _public getSpeed()_ and _setSpeed()_ methods.
 # Inheritance
+**Inheritance is the mechanism that allows one class to acquire all the properties from another class by inheriting the class.**
 
+In Java, we do this by extending the parent class. Thus, the child class gets all the properties from the parent:
+
+```java
+public class Car extends Vehicle { 
+    //...
+}
+```
+
+When we extend a class, we form an [IS-A relationship](https://www.baeldung.com/java-inheritance-composition). **The _Car_ IS-A _Vehicle_.** So, it has all the characteristics of a _Vehicle_.
+
+While we inherit from the parent class, a developer could also override a method implementation from the parent. **This is known as [method overriding](https://www.baeldung.com/java-method-overload-override#method-overriding).**
 # Polymorphism
+[Polymorphism](https://www.baeldung.com/cs/polymorphism) is the ability of an OOP language to process data differently depending on their types of inputs. 
+
+In Java, this can be the same method name having **different parameters** and performing different functions,
+
+aka **method overloading**:
+
+```java
+public class TextFile extends GenericFile {
+    public String read() {
+        return this.getContent()
+          .toString();
+    }
+ 
+    public String read(int limit) {
+        return this.getContent()
+          .toString()
+          .substring(0, limit);
+    }
+ 
+    public String read(int start, int stop) {
+        return this.getContent()
+          .toString()
+          .substring(start, stop);
+    }
+}
+```
+
+
+There is also runtime or **dynamic polymorphism, where the child class overrides the parent’s method**:
+```java
+public class GenericFile {
+    private String name;
+ 
+    public String getFileInfo() {
+        return "Generic File Impl";
+    }
+}
+```
+
+A child class can extend the _GenericFile_ class and override the _getFileInfo()_ method:
+
+```java
+public class ImageFile extends GenericFile {
+    private int height;
+    private int width;
+ 
+    //... getters and setters
+     
+    public String getFileInfo() {
+        return "Image File Impl";
+    }
+}
+```
