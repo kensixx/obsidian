@@ -16,6 +16,7 @@ Resources:
 2. Interface vs Abstract
 3. concurrency
 4. Stream
+5. collect HackerRank or relevant coding questions, show examples
 # Single Responsibility Principle
 **There should never be more than one reason for a class to change.**
 ## Example
