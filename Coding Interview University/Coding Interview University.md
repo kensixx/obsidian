@@ -17,6 +17,7 @@ Resources:
 3. concurrency
 4. Stream
 5. collect HackerRank or relevant coding questions, show examples
+6. add Spring Boot terminologies, Spring DI, autowiring - definitions
 # Single Responsibility Principle
 **There should never be more than one reason for a class to change.**
 ## Example
