@@ -5,19 +5,19 @@ Resources:
 | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
 | https://www.oodesign.com/                                                                                    | OODesign.com                                 |
 | https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#additional-detail-on-some-subjects | Coding Interview University -> SOLID Section |
-1. SOLID 
-2. Design Patterns, 1 example for each category 
-3. OOP Pillars
-	- Abstraction
-	- Encapsulation
-	- Inheritance
-	- Polymorphism
-1. Best practices pag create restful api
-2. Interface vs Abstract
-3. concurrency
-4. Stream
-5. collect HackerRank or relevant coding questions, show examples
-6. add Spring Boot terminologies, Spring DI, autowiring - definitions
+1. [x] SOLID - 
+2. [ ] Design Patterns, 1 example for each category 
+3. [x] OOP Pillars
+	- [x] Abstraction
+	- [x] Encapsulation
+	- [x] Inheritance
+	- [x] Polymorphism
+1. [x] Best practices pag create restful api
+2. [x] Interface vs Abstract
+3. [x] Concurrency
+4. [x] Stream
+5. [ ] collect HackerRank or relevant coding questions, show examples
+6. [ ] add Spring Boot terminologies, Spring DI, autowiring - definitions
 # Single Responsibility Principle
 **There should never be more than one reason for a class to change.**
 ## Example
@@ -710,3 +710,39 @@ These are some of the most useful utilities from the _java.util.concurrent_ pack
 - _DelayQueue_
 - _Locks_
 - _Phaser_
+# Spring Boot Questions
+
+## What is Spring Boot?
+ Spring Boot is basically an extension of the Spring framework, which eliminates the boilerplate configurations required for setting up a Spring application.
+
+It takes an opinionated view of the Spring platform, which paves the way for a faster and more efficient development ecosystem.
+
+## Differentiate Spring Framework and Spring Boot?
+
+**the Spring framework provides comprehensive infrastructure support for developing Java applications**.
+
+It’s packed with some nice features like Dependency Injection, and out of the box modules like:
+
+- Spring JDBC
+- Spring MVC
+- Spring Security
+- Spring AOP
+- Spring ORM
+- Spring Test
+ 
+##  Difference between @RestController and @Controller annotations?
+	1. The @Controller annotation serves as a specialization of @Component, allowing for implementation classes to be auto-detected through classpath scanning. The @RequestMapping annotated methods, in the controller class, act as request handlers for the mapped URLs.
+
+		If we need to return raw JSON or XML from the @Controller class methods, we need to annotate the method with @ResponseBody that indicates a method return value should be bound to the web response body.
+		
+		The @RestController is a composite annotation that is a combination of @Controller and @ResponseBody. When we annotate a class with @RestController, all the handler methods automatically have @ResponseBody annotation applied. So all handler methods automatically return the raw JSON/XML response bodies.
+		
+		@RestController = @Controller + @ResponseBody
+
+
+
+## Explain IoC and Dependency Injection?
+
+## What is Hibernate?
+1. ****Hibernate ORM:**** Hibernate is an object-relational mapping (ORM) framework, that provides a bridge between Java objects and relational database tables. Overall no need to write SQL queries manually. 
+2. - Spring Data JPA****:**** Recommended way to integrate Spring with Hibernate, It simplifies data access using JPA annotations.
