@@ -25,26 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding Interview University/Coding Interview University.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7150de10c40f8ae0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Coding Interview University/Coding Interview University.md",
+                "file": "PlantUML Example.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding Interview University/Coding Interview University.md",
+                "file": "PlantUML Example.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Coding Interview University/Coding Interview University.md",
+                "file": "PlantUML Example.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Coding Interview University/Coding Interview University.md"
+                "file": "PlantUML Example.md"
               }
             }
           },
@@ -163,11 +151,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 245.5
+    "width": 308.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,11 +168,11 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "6545ea99e9569cea",
+  "active": "0a7619bcc715593a",
   "lastOpenFiles": [
+    "Coding Interview University/Coding Interview University.md",
     "Coding Interview University/attachments/Pasted image 20240725210806.png",
     "README.md",
-    "Coding Interview University/Coding Interview University.md",
     "Coding Interview University/attachments/Pasted image 20240725205905.png",
     "Coding Interview University/attachments/Pasted image 20240725205755.png",
     "Coding Interview University/attachments/Pasted image 20240725205743.png",
