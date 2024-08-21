@@ -115,6 +115,10 @@ This is good example because:
 Description: 
 - A child class should be able to be used in place of its parent class.
 - If we substitute a parent class object reference with an object of *any* of its child classes, **the program should not break**.
+- The LSP in simple terms states that objects of the same superclass should be able to be swapped with each other without breaking anything.
+- For example, if we have a `Cat` and a `Dog` class derived from an `Animal` class, any functions using the `Animal` class should be able to use `Cat` or `Dog` and behave normally.
+
+![](attachments/Pasted%20image%2020240821112150.png)
 
 Say we had a method that used a superclass object reference to do something:
 ```java
@@ -131,9 +135,74 @@ class ChildClass {
 This should work as expected for _every possible subclass object of `ParentClass` that is passed to it_. 
 
 If substituting a parent class object with a child class object changes the program behavior in unexpected ways, **the LSP is violated**.
-## Example
-![](attachments/Pasted%20image%2020240725210806.png)
+## Real-World Example:
+Reference: https://stackoverflow.com/a/48855491/7209628
 
+```php
+<?php
+
+interface Database 
+{
+    public function selectQuery(string $sql): array;
+}
+
+class SQLiteDatabase implements Database
+{
+    public function selectQuery(string $sql): array
+    {
+        // sqlite specific code
+
+        return $result;
+    }
+}
+
+class MySQLDatabase implements Database
+{
+    public function selectQuery(string $sql): array
+    {
+        // mysql specific code
+
+        return $result; 
+    }
+}
+```
+
+This design conforms to the LSP because the behavior remains unchanged regardless of the implementation we choose to use.
+
+And yes, you can violate LSP in this configuration doing one simple change like so :
+
+```php
+<?php
+
+interface Database 
+{
+    public function selectQuery(string $sql): array;
+}
+
+class SQLiteDatabase implements Database
+{
+    public function selectQuery(string $sql): array
+    {
+        // sqlite specific code
+
+        return $result;
+    }
+}
+
+class MySQLDatabase implements Database
+{
+    public function selectQuery(string $sql): array
+    {
+        // mysql specific code
+
+        return ['result' => $result]; // This violates LSP !
+    }
+}
+```
+
+Now the subtypes cannot be used the same way since they don't produce the same result anymore.
+## Additional Example - Rectangles & Squares
+![](attachments/Pasted%20image%2020240725210806.png)
 # Interface Segregation Principle (ISP)
 The **Interface Segregation Principle** states that clients should not be forced to implement interfaces they don't use.
 
