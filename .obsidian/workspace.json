@@ -20,7 +20,7 @@
             }
           },
           {
-            "id": "0a7619bcc715593a",
+            "id": "7150de10c40f8ae0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,9 +30,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8e35d5da8e690445",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ken - Interviews.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ceb5df470176e154",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Gladys - Interviews.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding Interview University/Coding Interview University.md",
+                "file": "Gladys - Interviews.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Coding Interview University/Coding Interview University.md",
+                "file": "Gladys - Interviews.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Coding Interview University/Coding Interview University.md"
+                "file": "Gladys - Interviews.md"
               }
             }
           },
@@ -155,7 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.5
+    "width": 345.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -170,21 +194,23 @@
   },
   "active": "ad2a6c080a6d16e6",
   "lastOpenFiles": [
+    "Ken - Interviews.md",
+    "Gladys - Interviews.md",
+    "Coding Interview University/Coding Interview University.md",
     "Coding Interview University/attachments/Pasted image 20240821112150.png",
     "Coding Interview University/attachments/Pasted image 20240821112144.png",
     "PlantUML Example.md",
-    "Coding Interview University/Coding Interview University.md",
     "Coding Interview University/attachments/Pasted image 20240725210806.png",
-    "README.md",
     "Coding Interview University/attachments/Pasted image 20240725205905.png",
     "Coding Interview University/attachments/Pasted image 20240725205755.png",
     "Coding Interview University/attachments/Pasted image 20240725205743.png",
     "Coding Interview University/attachments/Pasted image 20240725200942.png",
     "Coding Interview University/attachments/Pasted image 20240723192708.png",
     "Coding Interview University/attachments/Pasted image 20240723190346.png",
+    "Untitled 1.md",
     "Coding Interview University/attachments/Pasted image 20240723185910.png",
-    "Coding Interview University/attachments/Pasted image 20240723102119.png",
     "Coding Interview University/attachments",
+    "README.md",
     "Untitled Kanban.md",
     "Sample.md",
     "Sample @{2024-07-24}.md",
