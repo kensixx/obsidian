@@ -508,7 +508,7 @@ In OOP, abstraction means hiding the complex implementation details of a program
 
 > In Java, we achieve abstraction by using **interfaces and abstract classes**.
 ## Encapsulation
-**Encapsulation is hiding the state or internal representation of an object from the consumer of an API** and providing publicly accessible methods bound to the object for read-write access. 
+**Encapsulation is hiding the state of an object from the consumer of an API** and providing publicly accessible methods bound to the object for read-write access. 
 
 For example, in Java, is making all data fields _private_ and only accessible by using the _public_ member methods:
 
@@ -541,6 +541,9 @@ When we extend a class, we form an [IS-A relationship](https://www.baeldung.com
 
 While we inherit from the parent class, a developer could also override a method implementation from the parent. **This is known as [method overriding](https://www.baeldung.com/java-method-overload-override#method-overriding).**
 ## Polymorphism
+
+> Polymorphism is the concept of method overloading in Java.
+
 [Polymorphism](https://www.baeldung.com/cs/polymorphism) is the ability of an OOP language to process data differently depending on their types of inputs. 
 
 In Java, this can be the same method name having **different parameters** and performing different functions,
@@ -596,11 +599,11 @@ public class ImageFile extends GenericFile {
 ```
 
 # Java 8 Streams
+> **This is a Java-equivalent to the lambda expressions in JavaScript.**
+
 Java Streams or Streams is a major new functionality in Java 8 – [_java.util.stream_](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/package-summary.html).
 
 The `java.util.stream` package consists of classes, interfaces, and many types **to allow for functional-style operations over elements.**
-
-> **This is very synonymous or a Java-equivalent to the lambda expressions in JavaScript.**
 
 Key Definitions:
 - From a developer point of view, it is a new concept that might just look like a Collection, but it is in fact much different from a Collection.
