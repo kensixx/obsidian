@@ -19,7 +19,7 @@ Resources:
 5. [ ] collect HackerRank or relevant coding questions, show examples
 6. [ ] add Spring Boot terminologies, Spring DI, autowiring - definitions
 # Single Responsibility Principle
-**There should never be more than one reason for a class to change.**
+- **There should be only one reason for a class to change.**
 ## Example
 User Management in a Web Applications
 ![](attachments/Pasted%20image%2020240723102119.png)
@@ -59,7 +59,7 @@ The following is a bad example:
   public void drawCircle(Circle r) {
     ....
   }
-
+ 
   public void drawRectangle(Rectangle r) {
     ....
   }
@@ -448,9 +448,10 @@ public class ImageSender implements Sender {
 ## Abstract
 
 ### When to Use an Abstract
+- Abstract involves reusability of code to other subclasses.
+- Abstract makes use the inheritance concept in code (**share code among many related classes**), by providing **common base class** methods that the subclasses override
 - **Consider using abstract classes and inheritance when our problem makes the evidence “A is a B”.** 
 	- For example, “Dog is an Animal”, “Lamborghini is a Car”, etc.
-- Trying to use the inheritance concept in code (**share code among many related classes**), by providing **common base class** methods that the subclasses override
 
 ### Example
 ```java
@@ -815,3 +816,92 @@ It’s packed with some nice features like Dependency Injection, and out of the 
 ## What is Hibernate?
 1. ****Hibernate ORM:**** Hibernate is an object-relational mapping (ORM) framework, that provides a bridge between Java objects and relational database tables. Overall no need to write SQL queries manually. 
 2. - Spring Data JPA****:**** Recommended way to integrate Spring with Hibernate, It simplifies data access using JPA annotations.
+
+
+Here are some common interview questions for a Senior Developer role focused on Spring Boot:
+
+## Core Spring Boot
+1. *What is Spring Boot, and how does it differ from the traditional Spring Framework?*
+   - Discuss the benefits like auto-configuration, embedded servers, and starter dependencies.
+
+2. *How does Spring Boot’s auto-configuration work?*
+   - Explain how Spring Boot automatically configures beans based on the classpath settings, beans, and properties.
+
+3. *What is a Spring Boot Starter? Name some commonly used starters.*
+   - Talk about starters like spring-boot-starter-web, spring-boot-starter-data-jpa, etc.
+
+4. *How can you create custom auto-configuration in Spring Boot?*
+   - Discuss how to create and register a custom @Configuration class.
+
+5. *What are Spring Profiles? How do you implement environment-specific configurations in Spring Boot?*
+   - Explain how profiles are used for different environments (dev, prod) and how properties files or YAML can be used.
+
+### Security and Authentication
+6. *How do you secure a Spring Boot application?*
+   - Discuss the use of Spring Security, including basic authentication, JWT, OAuth2, etc.
+
+7. *What is OAuth2? How do you implement it in a Spring Boot application?*
+   - Explain the OAuth2 authorization flow and the use of Spring Security OAuth2 for implementation.
+
+### Data Access
+8. *How does Spring Boot handle data access with JPA?*
+   - Discuss how to configure Spring Data JPA, create repositories, and manage transactions.
+
+9. **What is the difference between CrudRepository, JpaRepository, and PagingAndSortingRepository?**
+   - Explain the functionalities provided by each interface.
+
+10. *How would you optimize database access in a Spring Boot application?*
+    - Talk about strategies like query caching, batch processing, and connection pooling.
+
+### Microservices and Distributed Systems
+11. *What is Spring Cloud, and how does it relate to Spring Boot?*
+    - Discuss components like Spring Cloud Config, Netflix Eureka, Zuul, and Hystrix.
+
+12. *How would you implement service discovery in Spring Boot?*
+    - Explain how to use Spring Cloud Netflix Eureka for service registration and discovery.
+
+13. *What are Circuit Breakers, and how can you implement them in Spring Boot?*
+    - Discuss the use of Resilience4j or Hystrix for implementing circuit breakers.
+
+14. *How do you handle distributed tracing and logging in a microservices environment?*
+    - Talk about tools like Spring Cloud Sleuth, Zipkin, and ELK stack.
+
+### Messaging and Event-Driven Architectures
+15. *How do you integrate Kafka with Spring Boot?*
+    - Explain how to configure a Kafka consumer and producer using Spring Kafka.
+
+16. *What are some design patterns you have used with Kafka in a Spring Boot application?*
+    - Discuss patterns like Consumer Group, Partitioning, Event Sourcing, etc.
+
+### Testing
+17. *How do you test a Spring Boot application?*
+    - Discuss testing strategies, including unit testing, integration testing, and tools like JUnit, Mockito, and Spring Boot Test.
+
+18. *What is TestRestTemplate, and how do you use it in Spring Boot?*
+    - Explain how to use TestRestTemplate for testing REST endpoints.
+
+### Performance and Scalability
+19. *How do you monitor and optimize the performance of a Spring Boot application?*
+    - Talk about monitoring tools like Actuator, Prometheus, Grafana, and performance tuning techniques.
+
+20. *How would you scale a Spring Boot application in a cloud environment?*
+    - Discuss containerization (Docker), orchestration (Kubernetes), and auto-scaling.
+
+### Advanced Topics
+21. *What are the different ways to deploy a Spring Boot application?*
+    - Talk about deploying to standalone servers, cloud platforms, containers, etc.
+
+22. *How do you handle long-running processes or batch jobs in Spring Boot?*
+    - Explain the use of Spring Batch or scheduling with @Scheduled.
+
+23. *How would you implement a distributed cache in a Spring Boot application?*
+    - Discuss using caching solutions like Redis or Hazelcast with Spring Cache.
+
+### Design and Architecture
+24. *Can you describe a complex architecture you have worked on using Spring Boot?*
+    - Be ready to discuss the overall design, challenges faced, and solutions implemented.
+
+25. *How do you approach designing RESTful APIs in Spring Boot?*
+    - Discuss REST principles, HATEOAS, versioning, and documentation with Swagger/OpenAPI.
+
+These questions cover a wide range of topics that could come up during an interview for a Senior Developer role with a focus on Spring Boot. Be sure to also discuss any specific projects or experiences you've had, as real-world examples are often key in senior-level interviews.
