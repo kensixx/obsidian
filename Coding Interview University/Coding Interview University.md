@@ -18,6 +18,7 @@ Resources:
 4. [x] Stream
 5. [ ] collect HackerRank or relevant coding questions, show examples
 6. [ ] add Spring Boot terminologies, Spring DI, autowiring - definitions
+7. [ ] add HashMap, Hashset, ArrayList, etc. and when to use those
 # Single Responsibility Principle
 - **There should be only one reason for a class to change.**
 ## Example
@@ -856,17 +857,7 @@ The _java.util.concurrent_ package provides tools for creating concurrent appl
 
 These are some of the most useful utilities from the _java.util.concurrent_ package:
 - _Executor_
-- _ExecutorService_
-- _ScheduledExecutorService_
 - _Future_
-- _CountDownLatch_
-- _CyclicBarrier_
-- _Semaphore_
-- _ThreadFactory_
-- _BlockingQueue_
-- _DelayQueue_
-- _Locks_
-- _Phaser_
 # Spring Boot Questions
 
 ## What is Spring Boot?
