@@ -83,10 +83,11 @@
             "id": "9299cc7ae369025b",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md",
-                "staged": false
+                "file": "Coding Interview University/2 - ChatGPT.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -157,6 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Coding Interview University/2 - ChatGPT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,6 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Coding Interview University/2 - ChatGPT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +197,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Coding Interview University/2 - ChatGPT.md"
+              }
             }
           },
           {
@@ -206,7 +211,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -223,7 +228,7 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "9299cc7ae369025b",
+  "active": "6545ea99e9569cea",
   "lastOpenFiles": [
     "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md",
     "Gladys - Interview/1. For HR - Gladys - Interviews.md",

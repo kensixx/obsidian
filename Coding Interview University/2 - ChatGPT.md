@@ -179,62 +179,65 @@ Here are some common object-oriented programming (OOP) interview questions for a
    - **L - Liskov Substitution Principle (LSP):** Objects of a superclass should be replaceable with objects of a subclass without affecting the functionality.
    - **I - Interface Segregation Principle (ISP):** A client should not be forced to implement interfaces it doesn’t use. Instead of having one large interface, break it into smaller ones.
    - **D - Dependency Inversion Principle (DIP):** High-level modules should not depend on low-level modules. Both should depend on abstractions.
+# Java Core Questions
 
-
-
-1. What are the major differences between JDK, JRE, and JVM?
+### 1. What are the major differences between JDK, JRE, and JVM?
 Answer:
-
-JDK (Java Development Kit): It's a software development kit used to develop Java applications. It includes JRE, development tools, and libraries required for Java development.
-JRE (Java Runtime Environment): JRE is a part of JDK, and it is used to run Java applications. It includes JVM and necessary libraries but does not include development tools like a compiler.
-JVM (Java Virtual Machine): JVM is a virtual machine that runs Java bytecode. It is platform-dependent and provides an environment where Java programs can execute.
-2. Explain the concept of garbage collection in Java.
-Answer: Garbage collection in Java is an automatic memory management process where objects that are no longer in use or referenced by the application are identified and removed from memory to free up resources. Java provides different garbage collection algorithms like Serial GC, Parallel GC, CMS (Concurrent Mark-Sweep), and G1 GC.
-
-3. What is the difference between HashMap and ConcurrentHashMap in Java?
+- **JDK (Java Development Kit):** It's a software development kit used to develop Java applications. It includes JRE, development tools, and libraries required for Java development.
+- **JRE (Java Runtime Environment):** JRE is a part of JDK, and it is used to run Java applications. It includes JVM and necessary libraries but does not include development tools like a compiler.
+- **JVM (Java Virtual Machine):** JVM is a virtual machine that runs Java bytecode. It is platform-dependent and provides an environment where Java programs can execute.
+### 2. Explain the concept of garbage collection in Java.
+Answer: 
+- Garbage collection in Java is an automatic memory management process where objects that are no longer in use or referenced by the application are identified and removed from memory to free up resources. 
+- Java provides different garbage collection algorithms like Serial GC, Parallel GC, CMS (Concurrent Mark-Sweep), and G1 GC.
+### 3. What is the difference between HashMap and ConcurrentHashMap in Java?
 Answer:
+- **HashMap:** It is not synchronized and not thread-safe. Multiple threads can access it simultaneously, leading to possible data inconsistency.
+- **ConcurrentHashMap:** It is thread-safe, allowing concurrent read and write operations. The locking mechanism is based on segments, so threads can operate on separate segments without blocking each other, which improves performance in multithreaded environments.
 
-HashMap: It is not synchronized and not thread-safe. Multiple threads can access it simultaneously, leading to possible data inconsistency.
-ConcurrentHashMap: It is thread-safe, allowing concurrent read and write operations. The locking mechanism is based on segments, so threads can operate on separate segments without blocking each other, which improves performance in multithreaded environments.
-4. What are design patterns? Name a few commonly used design patterns in Java.
-Answer: Design patterns are proven solutions to common software design problems. They provide a template on how to solve a problem that can be used in many different situations. Some commonly used design patterns in Java include:
-
-Singleton Pattern: Ensures that a class has only one instance and provides a global point of access to it.
-Factory Pattern: Provides an interface for creating objects but allows subclasses to alter the type of objects that will be created.
-Observer Pattern: Defines a one-to-many dependency between objects, so when one object changes state, all its dependents are notified and updated automatically.
-Decorator Pattern: Allows behavior to be added to an object dynamically.
-5. How does Java handle exceptions?
-Answer: Java handles exceptions using a combination of try, catch, finally, throw, and throws keywords. When an exception occurs, the normal flow of the program is disrupted, and the exception is thrown. The catch block is used to handle the exception, and the finally block can be used to execute cleanup code. Java has checked and unchecked exceptions:
-
-Checked Exceptions: These are checked at compile-time (e.g., IOException, SQLException).
-Unchecked Exceptions: These occur at runtime and are typically programming errors (e.g., NullPointerException, ArrayIndexOutOfBoundsException).
-6. What is the difference between == and equals() method in Java?
+### 4. What are design patterns? Name a few commonly used design patterns in Java.
+Answer: 
+- Design patterns are proven solutions to common software design problems. They provide a template on how to solve a problem that can be used in many different situations. 
+- Some commonly used design patterns in Java include:
+	- **Singleton Pattern**: Ensures that a class has only one instance and provides a global point of access to it.
+	- **Factory Pattern**: Provides an interface for creating objects but allows subclasses to alter the type of objects that will be created.
+	- **Observer Pattern**: Defines a one-to-many dependency between objects, so when one object changes state, all its dependents are notified and updated automatically.
+	- **Decorator Pattern**: Allows behavior to be added to an object dynamically.
+### 5. How does Java handle exceptions?
+Answer: 
+- Java handles exceptions using a combination of `try`, `catch`, `finally`, `throw`, and `throws` keywords. 
+- When an exception occurs, the normal flow of the program is disrupted, and the exception is thrown. The `catch` block is used to handle the exception, and the `finally` block can be used to execute cleanup code. 
+- Java has checked and unchecked exceptions:
+	- **Checked Exceptions**: These are checked at **compile-time** (e.g., `IOException`, `SQLException`).
+	- **Unchecked Exceptions**: These occur at **runtime** and are **typically programming errors** (e.g., `NullPointerException`, `ArrayIndexOutOfBoundsException`).
+### 6. What is the difference between == and equals() method in Java?
+**Answer:**
+- `==:` This operator checks if two references **point to the same memory location** (reference comparison).
+- `equals()`: This method is used to **compare the actual content of objects** (value comparison). For example, in `String` class, `equals()` is overridden to compare the content of the strings rather than their references.
+### 7. What are the new features introduced in Java 17?
+Answer: 
+- Some of the key features introduced in Java 17 include:
+	- **Sealed Classes**: These allow developers to control which classes can extend or implement them.
+	- **Pattern Matching for `switch`**: Introduced in preview, this allows more flexible and readable switch statements by matching against patterns.
+	- **New Garbage Collector Improvements**: Such as improvements to ZGC (Z Garbage Collector) and G1 GC.
+	- **Deprecation of RMI Activation**: Remote Method Invocation (RMI) Activation was deprecated for removal.
+### 8. What is the difference between a process and a thread in Java?
 Answer:
-
-==: This operator checks if two references point to the same memory location (reference comparison).
-equals(): This method is used to compare the actual content of objects (value comparison). For example, in String class, equals() is overridden to compare the content of the strings rather than their references.
-7. What are the new features introduced in Java 17?
-Answer: Some of the key features introduced in Java 17 include:
-
-Sealed Classes: These allow developers to control which classes can extend or implement them.
-Pattern Matching for switch: Introduced in preview, this allows more flexible and readable switch statements by matching against patterns.
-New Garbage Collector Improvements: Such as improvements to ZGC (Z Garbage Collector) and G1 GC.
-Deprecation of RMI Activation: Remote Method Invocation (RMI) Activation was deprecated for removal.
-8. What is the difference between a process and a thread in Java?
-Answer:
-
-Process: A process is an independent program in execution, having its own memory space.
-Thread: A thread is a smaller unit of a process that shares the same memory space as other threads within the same process. Java supports multithreading, which allows concurrent execution of multiple threads.
-9. Explain the concept of volatile keyword in Java.
-Answer: The volatile keyword in Java is used to indicate that a variable's value will be modified by different threads. It ensures that the value of the variable is always read from the main memory, and not from the thread's local cache, providing visibility guarantees. However, it does not provide atomicity for compound operations.
-
-10. How does Java achieve platform independence?
-Answer: Java achieves platform independence through the use of bytecode and the Java Virtual Machine (JVM). When a Java program is compiled, it is converted into platform-independent bytecode. The JVM on each platform interprets or compiles this bytecode into native machine code, enabling the same Java program to run on different platforms without modification.
-
+- **Process**: A process is an independent program in execution, having its own memory space.
+- **Thread**: A thread is a smaller unit of a process that shares the same memory space as other threads within the same process. 
+	- Java supports multithreading, which allows concurrent execution of multiple threads.
+### 9. Explain the concept of volatile keyword in Java.
+Answer: 
+- The `volatile` keyword in Java is used to indicate that a variable's value will be modified by different threads. 
+- It ensures that the value of the variable is always read from the main memory, and not from the thread's local cache, providing visibility guarantees. 
+- However, it does not provide atomicity for compound operations.
+### 10. How does Java achieve platform independence?
+Answer: 
+- Java achieves platform independence through the use of bytecode and the Java Virtual Machine (JVM). 
+- When a Java program is compiled, it is converted into platform-independent bytecode. 
+- The JVM on each platform interprets or compiles this bytecode into native machine code, enabling the same Java program to run on different platforms without modification.
 
 Here are some essential core Java interview questions for a Senior Developer position, along with detailed answers:
-
-# Java Core Questions
 ### 1. **What is the difference between `final`, `finally`, and `finalize()` in Java?**
    **Answer:**
    - **`final`:** The `final` keyword is used to apply restrictions to classes, methods, and variables.
