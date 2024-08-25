@@ -175,7 +175,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -192,11 +192,11 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "6545ea99e9569cea",
+  "active": "ad2a6c080a6d16e6",
   "lastOpenFiles": [
-    "Ken - Interviews.md",
-    "Coding Interview University/Coding Interview University.md",
     "Gladys - Interviews.md",
+    "Coding Interview University/Coding Interview University.md",
+    "Ken - Interviews.md",
     "Coding Interview University/attachments/Pasted image 20240821112150.png",
     "Coding Interview University/attachments/Pasted image 20240821112144.png",
     "PlantUML Example.md",

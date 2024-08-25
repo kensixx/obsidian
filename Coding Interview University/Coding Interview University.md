@@ -356,10 +356,94 @@ public class OrderService {
 ## Creational Patterns
 
 ### Singleton
-Ensure that only one instance of a class is created and Provide a global access point to the object.
+The Singleton pattern is a creational design pattern that ensures a class has only one instance and provides a global point of access to that instance.
 
+**Intent:**
+- To restrict the instantiation of a class to one single instance and provide a global access point to it.
+
+**When to Use:**
+- When there should be exactly one instance of a class that is shared across the system.
+- Common examples include logging, configuration settings, or managing a connection to a database.
+
+**Implementation:**
+
+- The class has a private constructor to prevent instantiation from outside.
+- A private static instance of the class is created and returned through a public static method.
+
+Example:
+```java
+public class Singleton {
+    // Private static variable to hold the single instance
+    private static Singleton instance;
+
+    // Private constructor to prevent instantiation
+    private Singleton() {}
+
+    // Public method to provide access to the instance
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+}
+```
 ## Behavioral Patterns
+### Strategy Pattern
+The Strategy pattern is a behavioral design pattern that defines a family of algorithms, encapsulates each one, and makes them interchangeable. The strategy pattern lets the algorithm vary independently from the clients that use it.
 
+**Intent:**
+- To enable selecting an algorithm at runtime based on the situation.
+- To encapsulate related algorithms into a group that can be swapped in and out without changing the client code.
+
+Example:
+```java
+// Strategy Interface
+interface PaymentStrategy {
+    void pay(int amount);
+}
+
+// Concrete Strategies
+class CreditCardPayment implements PaymentStrategy {
+    public void pay(int amount) {
+        System.out.println("Paid " + amount + " using Credit Card");
+    }
+}
+
+class PayPalPayment implements PaymentStrategy {
+    public void pay(int amount) {
+        System.out.println("Paid " + amount + " using PayPal");
+    }
+}
+
+// Context class
+class ShoppingCart {
+    private PaymentStrategy paymentStrategy;
+
+    public void setPaymentStrategy(PaymentStrategy paymentStrategy) {
+        this.paymentStrategy = paymentStrategy;
+    }
+
+    public void checkout(int amount) {
+        paymentStrategy.pay(amount);
+    }
+}
+
+// Client code
+public class StrategyPatternExample {
+    public static void main(String[] args) {
+        ShoppingCart cart = new ShoppingCart();
+
+        // Pay using credit card
+        cart.setPaymentStrategy(new CreditCardPayment());
+        cart.checkout(100); // Outputs: Paid 100 using Credit Card
+
+        // Pay using PayPal
+        cart.setPaymentStrategy(new PayPalPayment());
+        cart.checkout(150); // Outputs: Paid 150 using PayPal
+    }
+}
+```
 # RESTful API - Best Practices
 
 ## Use noun instead of verbs
@@ -789,56 +873,65 @@ These are some of the most useful utilities from the _java.util.concurrent_ pack
  Spring Boot is basically an extension of the Spring framework, which eliminates the boilerplate configurations required for setting up a Spring application.
 
 It takes an opinionated view of the Spring platform, which paves the way for a faster and more efficient development ecosystem.
-
 ## Differentiate Spring Framework and Spring Boot?
-
-**the Spring framework provides comprehensive infrastructure support for developing Java applications**.
+the Spring framework provides comprehensive infrastructure support for developing Java applications.
 
 It’s packed with some nice features like Dependency Injection, and out of the box modules like:
-
 - Spring JDBC
 - Spring MVC
 - Spring Security
 - Spring AOP
 - Spring ORM
 - Spring Test
- 
-##  Difference between @RestController and @Controller annotations?
-	1. The @Controller annotation serves as a specialization of @Component, allowing for implementation classes to be auto-detected through classpath scanning. The @RequestMapping annotated methods, in the controller class, act as request handlers for the mapped URLs.
-
-		If we need to return raw JSON or XML from the @Controller class methods, we need to annotate the method with @ResponseBody that indicates a method return value should be bound to the web response body.
-		
-		The @RestController is a composite annotation that is a combination of @Controller and @ResponseBody. When we annotate a class with @RestController, all the handler methods automatically have @ResponseBody annotation applied. So all handler methods automatically return the raw JSON/XML response bodies.
-		
-		@RestController = @Controller + @ResponseBody
-
-
-
 ## Explain IoC and Dependency Injection?
+**Dependency Injection (DI)** is a **specific implementation** of the IoC principle. 
 
+It refers to the process of injecting dependencies (objects that a class needs to function) into a class, rather than the class creating those dependencies itself.
+
+In Spring, the IoC container is responsible for managing the lifecycle of beans (objects). 
+
+When you declare beans in the Spring configuration, the container is responsible for instantiating, configuring, and assembling the dependencies of these beans.
+
+Example in Spring:
+
+Spring uses DI to wire beans together. For instance, if you have a Service class that depends on a Repository, you can declare these beans in the Spring context, and Spring will automatically inject the Repository into the Service using DI.
+
+```java
+@Service
+public class MyService {
+    private final MyRepository repository;
+
+    @Autowired
+    public MyService(MyRepository repository) {
+        this.repository = repository;
+    }
+}
+```
+In this example, MyService depends on MyRepository, and Spring will inject MyRepository into MyService when the application starts.
+### Summary
+- **Inversion of Control (IoC)** is a broader concept where the control of object creation and lifecycle management is given to a framework or container.
+- **Dependency Injection (DI)** is a specific technique under IoC where dependencies are injected into a class by the framework rather than the class managing them itself.
 ## What is Hibernate?
 1. ****Hibernate ORM:**** Hibernate is an object-relational mapping (ORM) framework, that provides a bridge between Java objects and relational database tables. Overall no need to write SQL queries manually. 
 2. - Spring Data JPA****:**** Recommended way to integrate Spring with Hibernate, It simplifies data access using JPA annotations.
-
-
+---
 Here are some common interview questions for a Senior Developer role focused on Spring Boot:
-
 ## Core Spring Boot
-1. *What is Spring Boot, and how does it differ from the traditional Spring Framework?*
-   - Discuss the benefits like auto-configuration, embedded servers, and starter dependencies.
+1. What is the difference between `@Component`, `@Service`, `@Repository`, and `@Controller`?
+**Answer:**
+- `@Component`: A generic stereotype for any Spring-managed component.
+- `@Service`: Specialization of `@Component`, used for business logic.
+- `@Repository`: Specialization of `@Component`, used for data access logic.
+- `@Controller`: Specialization of `@Component`, used to define a web controller in an MVC application.
+ 
+2. Difference between @RestController and @Controller annotations?
+- The `@RestController` annotation is a convenience annotation that combines `@Controller` and `@ResponseBody`. 
+- It is used to create RESTful web services where the return value of methods is serialized directly to the HTTP response body.
 
-2. *How does Spring Boot’s auto-configuration work?*
-   - Explain how Spring Boot automatically configures beans based on the classpath settings, beans, and properties.
-
-3. *What is a Spring Boot Starter? Name some commonly used starters.*
-   - Talk about starters like spring-boot-starter-web, spring-boot-starter-data-jpa, etc.
-
-4. *How can you create custom auto-configuration in Spring Boot?*
-   - Discuss how to create and register a custom @Configuration class.
-
-5. *What are Spring Profiles? How do you implement environment-specific configurations in Spring Boot?*
-   - Explain how profiles are used for different environments (dev, prod) and how properties files or YAML can be used.
-
+3. How do you handle exceptions in Spring Boot?
+	**Answer:** 
+	- You can handle exceptions in Spring Boot using `@ControllerAdvice` and `@ExceptionHandler` for controller-level exception handling, 
+	- or by creating custom error pages and configuring them using `ErrorController`
 ### Security and Authentication
 6. *How do you secure a Spring Boot application?*
    - Discuss the use of Spring Security, including basic authentication, JWT, OAuth2, etc.
@@ -851,7 +944,17 @@ Here are some common interview questions for a Senior Developer role focused on 
    - Discuss how to configure Spring Data JPA, create repositories, and manage transactions.
 
 9. **What is the difference between CrudRepository, JpaRepository, and PagingAndSortingRepository?**
-   - Explain the functionalities provided by each interface.
+	- **CrudRepository**
+		Purpose:
+		- Provides basic CRUD (Create, Read, Update, Delete) operations.
+		- It is the simplest interface in Spring Data JPA and is meant for basic operations without the need for pagination or sorting.
+	- **PagingAndSortingRepository**
+		Purpose:
+		- Extends **CrudRepository** and adds methods for pagination and sorting of records.
+	- **JpaRepository**
+		Purpose:
+		- Extends **PagingAndSortingRepository** and adds JPA-specific methods, such as batch operations and the ability to flush persistence contexts.
+		- It offers a more extensive set of methods compared to CrudRepository
 
 10. *How would you optimize database access in a Spring Boot application?*
     - Talk about strategies like query caching, batch processing, and connection pooling.
@@ -869,20 +972,12 @@ Here are some common interview questions for a Senior Developer role focused on 
 14. *How do you handle distributed tracing and logging in a microservices environment?*
     - Talk about tools like Spring Cloud Sleuth, Zipkin, and ELK stack.
 
-### Messaging and Event-Driven Architectures
-15. *How do you integrate Kafka with Spring Boot?*
-    - Explain how to configure a Kafka consumer and producer using Spring Kafka.
-
-16. *What are some design patterns you have used with Kafka in a Spring Boot application?*
-    - Discuss patterns like Consumer Group, Partitioning, Event Sourcing, etc.
-
 ### Testing
 17. *How do you test a Spring Boot application?*
     - Discuss testing strategies, including unit testing, integration testing, and tools like JUnit, Mockito, and Spring Boot Test.
 
 18. *What is TestRestTemplate, and how do you use it in Spring Boot?*
     - Explain how to use TestRestTemplate for testing REST endpoints.
-
 ### Performance and Scalability
 19. *How do you monitor and optimize the performance of a Spring Boot application?*
     - Talk about monitoring tools like Actuator, Prometheus, Grafana, and performance tuning techniques.

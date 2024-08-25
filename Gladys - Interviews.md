@@ -2,13 +2,13 @@
 ## Please introduce yourself
 - Hi, my name is Gladys Talavera, I'm currently working at UnionBank of the Philippines, and my role is a Software Engineer in the DevSecOps and Microservices Team.
 - Since then, our projects are related to Citibank projects due to Unionbank acquiring Citibank. And just this month of April, we held the LD2 Migration which was quite a tiring experience for us since we have to support for the whole period.
-- One of the projects assigned to me was to provide a microservice that follows the calculation of personal loans of Citibank. The idea is an agent will call a particular customer, and will offer a loan promotion and they will use the personal loans calculator to tell the customer what are the rates and charges of a loan promo specific to them.
-
+- One of the projects assigned to me was to provide a microservice that follows the calculation of personal loans of Citibank. 
+	- The idea is an agent will call a particular customer, and will offer a loan promotion,
+	- and they will use the personal loans calculator to tell the customer what are the rates and charges of a loan promo specific to them.
 ## What are the tech stacks that you use?
 - We use Quarkus, a Java framework very similar to Spring, but it's more lightweight and more cloud-native than Spring.
 - Our infrastructure use Kubernetes, and in particular, we use Red Hat OpenShift which is an enterprise version of Kubernetes provided by Red Hat. 
 - In version control we use GitLab. Our CI/CD pipelines are also stored there.
-
 ## Why are you currently exploring for new opportunities?
 I am exploring new opportunities to continue growing both personally and professionally. While I have thoroughly enjoyed my current role as a Software Engineer at UnionBank and have gained invaluable experience, I believe that new challenges are essential for continuous learning and development.
 
