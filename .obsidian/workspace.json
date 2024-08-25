@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ken - Interviews.md",
+                "file": "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ken - Interviews.md",
+                "file": "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ken - Interviews.md",
+                "file": "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ken - Interviews.md"
+                "file": "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md"
               }
             }
           },
@@ -211,7 +211,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -228,8 +228,9 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "8844a39d2d1a82c0",
+  "active": "9299cc7ae369025b",
   "lastOpenFiles": [
+    "Ken - Interviews.md",
     "Gladys - Interview/1. For HR - Gladys - Interviews.md",
     "Coding Interview University/2 - ChatGPT.md",
     "Coding Interview University/Coding Interview University.md",
@@ -237,7 +238,6 @@
     "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md",
     "Untitled",
     "Gladys - Interview",
-    "Ken - Interviews.md",
     "Coding Interview University/attachments/Pasted image 20240821112150.png",
     "Coding Interview University/attachments/Pasted image 20240821112144.png",
     "PlantUML Example.md",
