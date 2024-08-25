@@ -884,6 +884,10 @@ It’s packed with some nice features like Dependency Injection, and out of the 
 - Spring ORM
 - Spring Test
 ## Explain IoC and Dependency Injection?
+### Summary
+- **Inversion of Control (IoC)** is a broader concept where the control of object creation and lifecycle management is given to a framework or container.
+- **Dependency Injection (DI)** is an implementation of the IoC principle, where dependencies are injected into a class by the framework rather than the class managing them itself.
+
 **Dependency Injection (DI)** is a **specific implementation** of the IoC principle. 
 
 It refers to the process of injecting dependencies (objects that a class needs to function) into a class, rather than the class creating those dependencies itself.
@@ -908,9 +912,6 @@ public class MyService {
 }
 ```
 In this example, MyService depends on MyRepository, and Spring will inject MyRepository into MyService when the application starts.
-### Summary
-- **Inversion of Control (IoC)** is a broader concept where the control of object creation and lifecycle management is given to a framework or container.
-- **Dependency Injection (DI)** is a specific technique under IoC where dependencies are injected into a class by the framework rather than the class managing them itself.
 ## What is Hibernate?
 1. ****Hibernate ORM:**** Hibernate is an object-relational mapping (ORM) framework, that provides a bridge between Java objects and relational database tables. Overall no need to write SQL queries manually. 
 2. - Spring Data JPA****:**** Recommended way to integrate Spring with Hibernate, It simplifies data access using JPA annotations.
