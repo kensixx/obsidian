@@ -19,6 +19,14 @@ Resources:
 5. [ ] collect HackerRank or relevant coding questions, show examples
 6. [ ] add Spring Boot terminologies, Spring DI, autowiring - definitions
 7. [ ] add HashMap, Hashset, ArrayList, etc. and when to use those
+
+# SOLID Summary
+The SOLID principles are five design principles that help developers create more maintainable and scalable object-oriented systems:
+   - **S - Single Responsibility Principle (SRP):** A class should have only one reason to change, meaning it should have only one responsibility.
+   - **O - Open/Closed Principle (OCP):** Software entities (classes, modules, functions) should be open for extension but closed for modification.
+   - **L - Liskov Substitution Principle (LSP):** Objects of a superclass should be replaceable with objects of a subclass without affecting the functionality.
+   - **I - Interface Segregation Principle (ISP):** A client should not be forced to implement interfaces it doesn’t use. Instead of having one large interface, break it into smaller ones.
+   - **D - Dependency Inversion Principle (DIP):** High-level modules should not depend on low-level modules. Both should
 # Single Responsibility Principle
 - **There should be only one reason for a class to change.**
 ## Example
@@ -876,7 +884,7 @@ It’s packed with some nice features like Dependency Injection, and out of the 
 - Spring Test
 ## Explain IoC and Dependency Injection?
 ### Summary
-- **Inversion of Control (IoC)** is a broader concept where the control of object creation and lifecycle management is given to a framework or container.
+- **Inversion of Control (IoC)** is a  concept where the control of object creation and lifecycle management is given to a framework or container.
 - **Dependency Injection (DI)** is an implementation of the IoC principle, where dependencies are injected into a class by the framework rather than the class managing them itself.
 
 **Dependency Injection (DI)** is a **specific implementation** of the IoC principle. 
