@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding Interview University/2 - ChatGPT.md",
+                "file": "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding Interview University/2 - ChatGPT.md",
+                "file": "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Coding Interview University/2 - ChatGPT.md",
+                "file": "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Coding Interview University/2 - ChatGPT.md"
+                "file": "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md"
               }
             }
           },
@@ -211,7 +211,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -228,13 +228,13 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "6545ea99e9569cea",
+  "active": "ad2a6c080a6d16e6",
   "lastOpenFiles": [
+    "Coding Interview University/2 - ChatGPT.md",
+    "Coding Interview University/Coding Interview University.md",
     "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md",
     "Gladys - Interview/1. For HR - Gladys - Interviews.md",
     "Ken - Interviews.md",
-    "Coding Interview University/2 - ChatGPT.md",
-    "Coding Interview University/Coding Interview University.md",
     "Coding Interview University/3 - ChatGPT Interview Questions.md",
     "Untitled",
     "Gladys - Interview",
