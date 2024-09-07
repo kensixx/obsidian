@@ -13,9 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding Interview University/Coding Interview University.md",
+                "file": "Diagrams/LEX/APIC Prod-only - Diagram.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "5aaaccabfad58572",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Diagrams/LEX/BSP Flow Lex.excalidraw"
               }
             }
           },
@@ -85,14 +95,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md",
+                "file": "Diagrams/LEX/APIC Prod-only - Diagram.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +131,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:\"Diagrams/LEX/\" ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -142,7 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 212.5
+    "width": 382.5
   },
   "right": {
     "id": "2174861f50a86b15",
@@ -158,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md",
+                "file": "Diagrams/LEX/BSP Flow Lex.excalidraw",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +185,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md",
+                "file": "Diagrams/LEX/BSP Flow Lex.excalidraw",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +208,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md"
+                "file": "Diagrams/LEX/BSP Flow Lex.excalidraw"
               }
             }
           },
@@ -225,18 +235,26 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "ad2a6c080a6d16e6",
+  "active": "5aaaccabfad58572",
   "lastOpenFiles": [
-    "Gladys - Interview/1. For HR - Gladys - Interviews.md",
-    "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md",
-    "Coding Interview University/2 - ChatGPT.md",
+    "Diagrams/LEX/APIC Prod-only - Diagram.md",
+    "Diagrams/LEX/BSP Flow Lex.excalidraw",
+    "Diagrams/LEX/Drawing 2024-09-07 11.36.17.excalidraw.md",
     "Coding Interview University/Coding Interview University.md",
+    "Untitled.md",
+    "Gladys - Interview/2. For Technical - Hiring Manager - Gladys.md",
+    "Diagrams/LEX",
+    "Untitled",
+    "Diagrams",
+    "Gladys - Interview/1. For HR - Gladys - Interviews.md",
+    "Coding Interview University/2 - ChatGPT.md",
     "Ken - Interviews.md",
     "Coding Interview University/3 - ChatGPT Interview Questions.md",
-    "Untitled",
     "Gladys - Interview",
     "Coding Interview University/attachments/Pasted image 20240821112150.png",
     "Coding Interview University/attachments/Pasted image 20240821112144.png",
