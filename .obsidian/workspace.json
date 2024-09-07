@@ -25,7 +25,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Diagrams/LEX/BSP Flow Lex.excalidraw"
+                "file": "Diagrams/LEX/BSP Flow Lex.excalidraw.md"
               }
             }
           },
@@ -168,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Diagrams/LEX/BSP Flow Lex.excalidraw",
+                "file": "Diagrams/LEX/BSP Flow Lex.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -185,7 +185,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Diagrams/LEX/BSP Flow Lex.excalidraw",
+                "file": "Diagrams/LEX/BSP Flow Lex.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -208,7 +208,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Diagrams/LEX/BSP Flow Lex.excalidraw"
+                "file": "Diagrams/LEX/BSP Flow Lex.excalidraw.md"
               }
             }
           },
@@ -243,6 +243,10 @@
   "active": "5aaaccabfad58572",
   "lastOpenFiles": [
     "Diagrams/LEX/APIC Prod-only - Diagram.md",
+    "Diagrams/LEX/BSP Flow Lex.excalidraw.md",
+    "Diagrams/LEX/Drawing 2024-09-07 14.29.37.excalidraw.md",
+    "Diagrams/LEX/system-design-template.excalidrawlib",
+    "Diagrams/LEX/Unconfirmed 26571.crdownload",
     "Diagrams/LEX/BSP Flow Lex.excalidraw",
     "Diagrams/LEX/Drawing 2024-09-07 11.36.17.excalidraw.md",
     "Coding Interview University/Coding Interview University.md",
