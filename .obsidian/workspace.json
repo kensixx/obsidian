@@ -23,16 +23,24 @@
             "id": "0a7619bcc715593a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Diagrams/LEX/APIC Prod-only - Diagram.md",
-                "mode": "source",
-                "source": false
+                "file": "Diagrams/LEX/BSP Flow Lex.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "38ee5d8309b7ab38",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Diagrams/UBGT/UBGT_Microservice_High_Level_Diagram.excalidraw.md"
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Diagrams/LEX/APIC Prod-only - Diagram.md",
+                "file": "Diagrams/UBGT/UBGT_Microservice_High_Level_Diagram.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Diagrams/LEX/APIC Prod-only - Diagram.md",
+                "file": "Diagrams/UBGT/UBGT_Microservice_High_Level_Diagram.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Diagrams/LEX/APIC Prod-only - Diagram.md"
+                "file": "Diagrams/UBGT/UBGT_Microservice_High_Level_Diagram.excalidraw.md"
               }
             }
           },
@@ -170,10 +178,50 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "8844a39d2d1a82c0",
+  "floating": {
+    "id": "b99eecc7f6abf1b2",
+    "type": "floating",
+    "children": [
+      {
+        "id": "f427832e5fbd13bb",
+        "type": "window",
+        "children": [
+          {
+            "id": "48ac52988d1cc2aa",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d2b141ddefc55daa",
+                "type": "leaf",
+                "state": {
+                  "type": "excalidraw",
+                  "state": {
+                    "file": "Diagrams/UBGT/UBGT_Microservice_High_Level_Diagram.excalidraw.md"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 256,
+        "y": 12,
+        "width": 1024,
+        "height": 800,
+        "maximize": true,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "38ee5d8309b7ab38",
   "lastOpenFiles": [
-    "Diagrams/LEX/BSP Flow Lex.excalidraw.md",
+    "Diagrams/system-design.excalidrawlib",
     "Diagrams/LEX/APIC Prod-only - Diagram.md",
+    "Diagrams/UBGT/UBGT_Microservice_High_Level_Diagram.excalidraw.md",
+    "Diagrams/system-design-template.excalidrawlib",
+    "Diagrams/aws-architecture-icons.excalidrawlib",
+    "Diagrams/LEX/BSP Flow Lex.excalidraw.md",
+    "Diagrams/UBGT",
     "Diagrams/LEX/system-design-template.excalidrawlib",
     "Diagrams/LEX/BSP Flow Lex.excalidraw",
     "KI.md",
@@ -203,7 +251,6 @@
     "Untitled Kanban.md",
     "Sample.md",
     "Sample @{2024-07-24}.md",
-    "MS PayDirect.md",
-    "CIU"
+    "MS PayDirect.md"
   ]
 }
