@@ -45,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diagrams/UBGT/PlantUML/Validate Transaction/Validate Transaction - Nium.md",
+                "file": "Diagrams/UBGT/PlantUML/Get Currencies Flow.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Diagrams/UBGT/PlantUML/Validate Transaction/Validate Transaction - Nium.md",
+                "file": "Diagrams/UBGT/PlantUML/Get Currencies Flow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Diagrams/UBGT/PlantUML/Validate Transaction/Validate Transaction - Nium.md",
+                "file": "Diagrams/UBGT/PlantUML/Get Currencies Flow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Diagrams/UBGT/PlantUML/Validate Transaction/Validate Transaction - Nium.md"
+                "file": "Diagrams/UBGT/PlantUML/Get Currencies Flow.md"
               }
             }
           },
@@ -190,11 +190,12 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "ad2a6c080a6d16e6",
+  "active": "258969a86353ac5e",
   "lastOpenFiles": [
+    "Diagrams/UBGT/PlantUML/Get Mandatory Fields Flow.md",
+    "Diagrams/UBGT/PlantUML/Get Currencies Flow.md",
     "Diagrams/UBGT/PlantUML/Validate Transaction/Validate Transaction - Dandelion.md",
     "Diagrams/UBGT/PlantUML/Validate Transaction/Validate Transaction - Nium.md",
-    "Diagrams/UBGT/PlantUML/Get Mandatory Fields Flow.md",
     "Diagrams/UBGT/PlantUML/Validate Transaction",
     "Diagrams/UBGT/UBGT_Microservice_High_Level_Diagram.excalidraw.md",
     "Diagrams/UBGT/PlantUML",
