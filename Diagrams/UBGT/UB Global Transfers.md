@@ -88,3 +88,123 @@ Notes:
   }
 }
 ```
+
+
+# ERD / ER Diagram
+
+```puml
+
+skinparam maxMessageSize 150
+
+entity "countries" as countries {  
+id: number  
+---
+name: varchar2(128)  
+country_code: varchar2(128)  
+status: varchar2(256)  
+created_date: varchar2(128)  
+modified_date: varchar2(10)  
+modified_by: varchar2(10)  
+}
+
+entity "partners" as partners {  
+id: number  
+---
+partner_code: varchar2(128)  
+is_active: boolean
+created_date: varchar2(128)  
+modified_date: varchar2(10)  
+modified_by: varchar2(10)  
+}
+
+entity "preferred_partners" as preferred_partners {  
+id: number  
+---
+partner_code: varchar2(128)  
+country_code: varchar2(128)  
+is_active: boolean
+created_date: varchar2(128)  
+modified_date: varchar2(10)  
+modified_by: varchar2(10)  
+}
+
+entity "currency_by_country" as currency_by_country {  
+id: number  
+---
+name: varchar2(128)  
+currency_list: varchar2(128)  
+country_code: varchar2(128)  
+is_active: boolean
+created_date: varchar2(128)  
+modified_date: varchar2(10)  
+modified_by: varchar2(10)  
+}
+
+entity "transaction_purpose" as transaction_purpose {  
+id: number  
+---
+code: varchar2(128)  
+description: varchar2(128)  
+partner_code: varchar2(128)  
+is_active: boolean
+created_date: varchar2(128)  
+modified_date: varchar2(10)  
+modified_by: varchar2(10)  
+}
+
+entity "transaction_source_of_funds" as transaction_source_of_funds {  
+id: number  
+---
+code: varchar2(128)  
+description: varchar2(128)  
+partner_code: varchar2(128)  
+is_active: boolean
+created_date: varchar2(128)  
+modified_date: varchar2(10)  
+modified_by: varchar2(10)  
+}
+
+entity "transaction_relationships" as transaction_relationships {  
+id: number  
+---
+code: varchar2(128)  
+description: varchar2(128)  
+partner_code: varchar2(128)  
+is_active: boolean
+created_date: varchar2(128)  
+modified_date: varchar2(10)  
+modified_by: varchar2(10)  
+}
+
+entity "partner_links" as partner_links {  
+id: number  
+---
+code: varchar2(128)  
+description: varchar2(128)  
+partner_code: varchar2(128)  
+url: varchar2(128)
+is_active: boolean
+created_date: varchar2(128)  
+modified_date: varchar2(10)  
+modified_by: varchar2(10)  
+}
+
+note right of partner_links::url
+  This is exposed GRPC endpoint 
+  of ms-nium / ms-dandelion 
+  (or new Partner)
+end note
+```
+
+
+Description
+Description
+Description
+Description
+Description
+Description
+Description
+Description
+
+country_code,currency_list
+PH,"1,2,3,4,5,6,7,8"
