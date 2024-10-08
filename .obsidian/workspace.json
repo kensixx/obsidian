@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Diagrams/UBGT/UB Global Transfers.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -162,7 +162,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 417.5
+    "width": 344.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,19 +179,19 @@
   },
   "active": "ad2a6c080a6d16e6",
   "lastOpenFiles": [
-    "Diagrams/UBGT/PlantUML/UBGT Overall Flow.md",
     "Diagrams/UBGT/UBGT_Microservice_High_Level_Diagram.excalidraw.md",
     "Diagrams/UBGT/UB Global Transfers.md",
+    "Diagrams/UBGT/DynamoDB IAM Policy Permissions.md",
+    "Diagrams/UBGT/Drawing 2024-09-26 12.42.55.excalidraw.md",
+    "Diagrams/UBGT/PlantUML/UBGT Overall Flow.md",
+    "Diagrams/UBGT/PlantUML/Get Mandatory Fields Flow.md",
+    "Diagrams/UBGT/PlantUML/Get Currencies Flow.md",
+    "Diagrams/UBGT/PlantUML/Validate Transaction/Validate Transaction - Dandelion.md",
     "Diagrams/LEX/BSP Flow Lex.excalidraw.md",
     "Diagrams/General/Generic KT.md",
-    "Diagrams/UBGT/Drawing 2024-09-26 12.42.55.excalidraw.md",
     "Diagrams/LEX/APIC Prod-only - Diagram.md",
-    "Diagrams/UBGT/PlantUML/Get Mandatory Fields Flow.md",
     "CIU/Coding Interview University.md",
-    "Diagrams/UBGT/PlantUML/Get Currencies Flow.md",
     "Diagrams/UBGT/PlantUML/Validate Transaction/Validate Transaction - Nium.md",
-    "Diagrams/UBGT/Untitled.md",
-    "Diagrams/UBGT/PlantUML/Validate Transaction/Validate Transaction - Dandelion.md",
     "Diagrams/UBGT/PlantUML/Validate Transaction",
     "Diagrams/UBGT/PlantUML",
     "Diagrams/LEX/COCREE Route issue.excalidraw.md",
